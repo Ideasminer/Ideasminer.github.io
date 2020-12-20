@@ -175,7 +175,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-12-20 16:28:10 / Modified: 17:32:34" itemprop="dateCreated datePublished" datetime="2020-12-20T16:28:10+08:00">2020-12-20</time>
+              <time title="Created: 2020-12-20 16:28:10 / Modified: 23:37:59" itemprop="dateCreated datePublished" datetime="2020-12-20T16:28:10+08:00">2020-12-20</time>
             </span>
 
           
@@ -203,56 +203,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="论文来源"><a href="#论文来源" class="headerlink" title="论文来源"></a>论文来源</h1><ul>
-<li>Transportation Research Part B (2018) 110-127</li>
-</ul>
-<h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><ul>
-<li><p>研究主题：Autonomous vehicle parking lots design</p>
-</li>
-<li><p>研究原因：可以节省大量停放空间，节省成本</p>
-</li>
-<li><p>基本停放模式：K-Stack</p>
-<ul>
-<li><p>Stack the AVs in serveral rows, one behind the other. 一个停车场有若干个停车岛，道路将这些停车岛分割开来，传统停车场一个停车道最多可以停放2排车辆（下图左），K-Stack停车场可以停放2K排车辆（下图右）。</p>
-<img src="/2020/12/20/Designing-parking-facilities/fig1.jpg" class>
-</li>
-<li><p>按这种方式停放，汽车出场会被阻隔，因此需要Re-locate：调车，调车依赖于停车场的布局设计。<strong>如果停车场设计理想，则占用率高但是调车次数少</strong>。</p>
-</li>
-<li><p>若有混合停车，可以将停车区域划分，一部分专门给自动驾驶车辆，一部分停放非自动驾驶车辆。</p>
-</li>
-</ul>
-</li>
-<li><p>研究目标：</p>
-<ul>
-<li>提供一种最优的停放布局</li>
-<li>提供一种relocation策略，让调车更加舒畅</li>
-<li>寻找最大停放数目</li>
-<li>计算可能节省多少的空间</li>
-</ul>
-</li>
-</ul>
-<h1 id="Background"><a href="#Background" class="headerlink" title="Background"></a>Background</h1><ul>
-<li><p>自动驾驶停车：十分重要</p>
-<ul>
-<li>自动驾驶车辆在不久的未来可以投入使用。</li>
-<li>目前研究者已经对自动驾驶车辆对交通的影响进行了多样的研究，包括交通流、安全、排放等。</li>
-<li>停车问题也值得研究，在一项调查中，很多人都认为自动驾驶车会重塑静态交通。</li>
-</ul>
-</li>
-<li><p>自动驾驶下停车的规划指南：缺失</p>
-</li>
-<li><p>存在类似的研究领域可以借鉴</p>
-<ul>
-<li>The stacking problem：最小化rehandling的次数（在停车问题中，为调车次数）</li>
-<li>Parking assignment：将自动驾驶车安排到合适的停车岛</li>
-<li>Optimal layout design：在自动驾驶停车问题中，寻找各个组件最优的尺寸和位置，得到最佳的停车场布局设计。</li>
-</ul>
-</li>
-</ul>
-<h1 id="Model"><a href="#Model" class="headerlink" title="Model"></a>Model</h1><ul>
-<li>待更新</li>
-</ul>
-
+          <p>对论文Designing parking facilities for autonomous vehicles综述，重点介绍了MIP方法求解自动驾驶停车场布局设计问题。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/12/20/Designing-parking-facilities/">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -302,7 +261,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-12-20 17:56:48" itemprop="dateModified" datetime="2020-12-20T17:56:48+08:00">2020-12-20</time>
+                <time title="Modified: 2020-12-20 23:39:08" itemprop="dateModified" datetime="2020-12-20T23:39:08+08:00">2020-12-20</time>
               </span>
 
           
@@ -330,45 +289,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="VS-Code-代码自动提交"><a href="#VS-Code-代码自动提交" class="headerlink" title="VS Code 代码自动提交"></a>VS Code 代码自动提交</h1><h2 id="操作前提"><a href="#操作前提" class="headerlink" title="操作前提"></a>操作前提</h2><ul>
-<li><p>有git</p>
-</li>
-<li><p>有项目仓库</p>
-</li>
-<li><p>已经对项目进行初始化</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git init</span><br></pre></td></tr></table></figure></li>
-<li><p>已经设置了提交的远程仓库（如GitHub）</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add origin PATH_TO_YOUR_REPO</span><br></pre></td></tr></table></figure>
-<h2 id="自动提交步骤"><a href="#自动提交步骤" class="headerlink" title="自动提交步骤"></a>自动提交步骤</h2></li>
-<li><p>对于Windows用户，可能存在<code>credential.helper = manager</code>的情况（查看方法：<code>git config --list</code>），这种情况下</p>
-<ul>
-<li><p>每次提交，会跳出GitHub的登陆界面，虽然credential中可能已经保存了你的账号和密码</p>
-</li>
-<li><p>并且输入正确的用户名和密码后，依然可能报错，需要继续输入一遍（命令行）</p>
-</li>
-<li><p>解决方法：</p>
-<ul>
-<li><pre><code class="bash">$ git credential-manager uninstall</code></pre>
-</li>
-</ul>
-</li>
-<li><p>通过以上方法，可以去除<code>credential.helper = manager</code></p>
-</li>
-</ul>
-</li>
-<li><p>去除了manager后，在git bash中进行<code>git config credential.helper store</code></p>
-<ul>
-<li>执行这条命令后，可以在<code>config</code>文件中看到此时多了<code>credential.helper: store</code>的信息，表示保存提交的用户信息，这样之后就可以不输入用户名和密码进行提交了。</li>
-<li>这里在<code>config</code>后加入<code>--global</code>可以变为全局指令，但是不推荐，因为可能不同项目提交不同用户的仓库，全局设置太过于死板，建议分项目单独设置。</li>
-<li>在此之后，进行一次提交，输入用户名和密码，则你的用户名和密码会被保存，之后再提交就不需要再输入了。</li>
-</ul>
-</li>
-<li><p>对于VS Code来说，完成如上步骤后，只需要用鼠标点点点，就可以完成提交，如下图所示。</p>
-<img src="/2020/12/19/%E4%BB%A3%E7%A0%81%E8%87%AA%E5%8A%A8%E6%8F%90%E4%BA%A4/auto-commit.png" class>
-
-</li>
-</ul>
-
+          <p>介绍了如何利用VS Code免验证Github账号密码提交代码的方法。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/12/19/%E4%BB%A3%E7%A0%81%E8%87%AA%E5%8A%A8%E6%8F%90%E4%BA%A4/">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -418,7 +347,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-12-20 17:57:04" itemprop="dateModified" datetime="2020-12-20T17:57:04+08:00">2020-12-20</time>
+                <time title="Modified: 2020-12-20 23:41:25" itemprop="dateModified" datetime="2020-12-20T23:41:25+08:00">2020-12-20</time>
               </span>
 
           
@@ -446,74 +375,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="使用Electron-amp-Python-构建桌面GUI"><a href="#使用Electron-amp-Python-构建桌面GUI" class="headerlink" title="使用Electron &amp; Python 构建桌面GUI"></a>使用Electron &amp; Python 构建桌面GUI</h1><h2 id="需求整理"><a href="#需求整理" class="headerlink" title="需求整理"></a>需求整理</h2><ul>
-<li>本人项目核心代码使用Python语言，改写为其他语言需要较大时间投入</li>
-<li>需要构建一个桌面应用</li>
-<li>Python相关的GUI库构建的桌面应用不美观灵活</li>
-</ul>
-<h2 id="可行性分析"><a href="#可行性分析" class="headerlink" title="可行性分析"></a>可行性分析</h2><ul>
-<li>可行之处<ul>
-<li>Electron 可以较好地将Web应用做成桌面应用</li>
-<li>Python通过flask，django等可以作为后端api和前端页面结合，制作Web应用</li>
-<li>Web前端设计使用html5, css3, javascript以及相关框架，构建灵活且较为美观</li>
-<li>综上，可以解决需求</li>
-</ul>
-</li>
-<li>问题点<ul>
-<li>Python作为后端的api，其如何与electron的前端通信</li>
-</ul>
-</li>
-</ul>
-<h2 id="解决思路"><a href="#解决思路" class="headerlink" title="解决思路"></a>解决思路</h2><ul>
-<li>使用Python-Shell + win.loadURL解决<ul>
-<li>在main.js中引用Python-Shell，定位到Python文件并运行，该文件可以启动flask或者django应用，即在本地’127.0.0.1:PORT’开放Web应用服务。</li>
-<li>使用win.loadURL(‘127.0.0.1:PORT’) 打开Web应用。</li>
-</ul>
-</li>
-</ul>
-<h2 id="关键细节"><a href="#关键细节" class="headerlink" title="关键细节"></a>关键细节</h2><ul>
-<li><p>Python-Shell 在打开Python脚本时的options配置</p>
-<ul>
-<li>需要配置Python.exe的位置和Scripts的位置</li>
-<li>Scripts中需要预装所依赖的库</li>
-<li>打开脚本的路径，是相对于Scripts的位置</li>
-</ul>
-</li>
-<li><p>建议：</p>
-<ul>
-<li><p>在开始项目时，Python使用虚拟环境，创建venv</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ python -m venv venv</span><br></pre></td></tr></table></figure></li>
-<li><p>在虚拟环境中，配置所需要的库</p>
-</li>
-<li><p>在main.js中，配置options，则根据venv的位置配置</p>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="样例代码"><a href="#样例代码" class="headerlink" title="样例代码"></a>样例代码</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// main.js</span></span><br><span class="line"><span class="keyword">const</span> &#123; app, BrowserWindow &#125; = <span class="built_in">require</span>(<span class="string">&quot;electron&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> options = &#123;</span><br><span class="line">  mode: <span class="string">&#x27;text&#x27;</span>,</span><br><span class="line">  pythonPath: <span class="string">&#x27;E:/Anaconda/python.exe&#x27;</span>,</span><br><span class="line">  pythonOptions: [<span class="string">&#x27;-u&#x27;</span>], <span class="comment">// get print results in real-time</span></span><br><span class="line">  scriptPath: <span class="string">&#x27;E:/Anaconda/Scripts/&#x27;</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> &#123;PythonShell&#125;  = <span class="built_in">require</span>(<span class="string">&quot;python-shell&quot;</span>)</span><br><span class="line">PythonShell.run(</span><br><span class="line">    <span class="string">&quot;../../example.py&quot;</span>, options, <span class="function"><span class="keyword">function</span> (<span class="params">err, results</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (err) <span class="keyword">throw</span> err</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">&#x27;test.py is running&#x27;</span>)</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">&#x27;results&#x27;</span>, results)</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">// 创建窗口</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">createWindow</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">let</span> win = <span class="keyword">new</span> BrowserWindow(&#123;</span><br><span class="line">        width: <span class="number">800</span>,</span><br><span class="line">        height: <span class="number">600</span></span><br><span class="line">    &#125;)</span><br><span class="line">    <span class="comment">// 加载 &quot;templates/flask_welcome.html&quot;</span></span><br><span class="line">    win.loadURL(<span class="string">&quot;http://127.0.0.1:8000&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">// 启动</span></span><br><span class="line">app.allowRendererProcessReuse = <span class="literal">true</span>;</span><br><span class="line">app.on(<span class="string">&quot;ready&quot;</span>, createWindow)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>本实验在Python部分使用Django框架，此部分不展示。</p>
-<p>下面的example.py文件，即是使用命令行打开dango应用而已。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># exmaple.py - use django</span></span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line">path = <span class="string">&#x27;manage.py&#x27;</span> <span class="comment"># path to your django manage.py file</span></span><br><span class="line">os.system(<span class="string">&#x27;python &#123;&#125; runserver&#x27;</span>.<span class="built_in">format</span>(path))</span><br></pre></td></tr></table></figure>
-<ul>
-<li><p>打开后效果如下</p>
-<img src="/2020/12/19/12_19-Python%20with%20Electron/12-19-1.png" class>
-</li>
-<li><p>如上效果，和在浏览器中显示完全一致，即将electron看作chrome内核的浏览器使用，该种方法构建的桌面应用其实是一种变相的Web应用。</p>
-</li>
-</ul>
-<h2 id="方案优缺点"><a href="#方案优缺点" class="headerlink" title="方案优缺点"></a>方案优缺点</h2><ul>
-<li>优点：<ul>
-<li>省时、省力，充分发挥python和前端技术的优势</li>
-<li>应用展示美观</li>
-</ul>
-</li>
-<li>缺点：<ul>
-<li>启动慢，按照此方案，每次打开桌面应用，其都需要运行python脚本来开放web应用的端口，需要花费一点点时间。</li>
-<li>文件大，需要打包electron环境和python环境</li>
-</ul>
-</li>
-</ul>
-
+          <p>参考其他文章，总结介绍了在main.js中配置Python-Shell，让Electron自动运行Python构建的Web应用的方法，该方法可以让Web应用呈现出桌面应用的效果。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/12/19/12_19-Python%20with%20Electron/">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -725,7 +595,7 @@
 
 <script>
 NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
-  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js', () => {
     var GUEST = ['nick', 'mail', 'link'];
     var guest = 'nick,mail,link';
     guest = guest.split(',').filter(item => {
@@ -737,7 +607,7 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
       notify     : false,
       appId      : 'GjqoCRaGi30O68WQDfMnQQ4y-gzGzoHsz',
       appKey     : '3yn9POMy9GMDRjlMiOFaefuW',
-      placeholder: "Just go go",
+      placeholder: "欢迎评论指正(*^_^*)",
       avatar     : 'mm',
       meta       : guest,
       pageSize   : '10' || 10,
