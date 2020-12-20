@@ -32,8 +32,8 @@
 <meta property="article:modified_time" content="2020-12-20T09:32:34.561Z">
 <meta property="article:author" content="Chen Jiayi">
 <meta property="article:tag" content="本科毕设">
-<meta property="article:tag" content="VAPSIM">
 <meta property="article:tag" content="论文综述">
+<meta property="article:tag" content="VAPSIM">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/2020/12/20/Designing-parking-facilities/fig1.jpg">
 
@@ -195,6 +195,20 @@
               <span class="post-meta-item-text">Views: </span>
               <span id="busuanzi_value_page_pv"></span>
             </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/2020/12/20/Designing-parking-facilities/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/12/20/Designing-parking-facilities/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
 
         </div>
       </header>
@@ -264,8 +278,8 @@
       <footer class="post-footer">
           <div class="post-tags">
               <a href="/tags/%E6%9C%AC%E7%A7%91%E6%AF%95%E8%AE%BE/" rel="tag"># 本科毕设</a>
-              <a href="/tags/VAPSIM/" rel="tag"># VAPSIM</a>
               <a href="/tags/%E8%AE%BA%E6%96%87%E7%BB%BC%E8%BF%B0/" rel="tag"># 论文综述</a>
+              <a href="/tags/VAPSIM/" rel="tag"># VAPSIM</a>
           </div>
 
         
@@ -290,6 +304,7 @@
 
           </div>
           
+    <div class="comments" id="valine-comments"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -477,6 +492,35 @@
   
 
   
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'GjqoCRaGi30O68WQDfMnQQ4y-gzGzoHsz',
+      appKey     : '3yn9POMy9GMDRjlMiOFaefuW',
+      placeholder: "Just go go",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
 
 </body>
 </html>
