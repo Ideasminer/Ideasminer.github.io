@@ -20,15 +20,20 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Ideasminer">
-<meta property="og:url" content="http://example.com/archives/2020/12/index.html">
+  <meta name="description" content="介绍了在服务器上的Django项目，如何为其他用户提供功能服务。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="django项目在服务器上的部署">
+<meta property="og:url" content="http://example.com/2020/12/24/django%E9%A1%B9%E7%9B%AE%E5%9C%A8%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E7%9A%84%E9%83%A8%E7%BD%B2/index.html">
 <meta property="og:site_name" content="Ideasminer">
+<meta property="og:description" content="介绍了在服务器上的Django项目，如何为其他用户提供功能服务。">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-12-24T07:21:53.000Z">
+<meta property="article:modified_time" content="2020-12-24T07:31:59.159Z">
 <meta property="article:author" content="Chen Jiayi">
+<meta property="article:tag" content="开发">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/archives/2020/12/">
+<link rel="canonical" href="http://example.com/2020/12/24/django%E9%A1%B9%E7%9B%AE%E5%9C%A8%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E7%9A%84%E9%83%A8%E7%BD%B2/">
 
 
 <script id="page-configurations">
@@ -36,12 +41,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>归档 | Ideasminer</title>
+  <title>django项目在服务器上的部署 | Ideasminer</title>
   
 
 
@@ -144,136 +149,130 @@
         <div class="content-wrap">
           
 
-          <div class="content archive">
+          <div class="content post posts-expand">
             
 
+    
   
   
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/24/django%E9%A1%B9%E7%9B%AE%E5%9C%A8%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E7%9A%84%E9%83%A8%E7%BD%B2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chen Jiayi">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ideasminer">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          django项目在服务器上的部署
+        </h1>
+
+        <div class="post-meta">
+        
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-12-24 15:21:53 / 修改时间：15:31:59" itemprop="dateCreated datePublished" datetime="2020-12-24T15:21:53+08:00">2020-12-24</time>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
   
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 5 篇日志。 继续努力。</span>
-      </div>
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2020/12/24/django%E9%A1%B9%E7%9B%AE%E5%9C%A8%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E7%9A%84%E9%83%A8%E7%BD%B2/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/12/24/django%E9%A1%B9%E7%9B%AE%E5%9C%A8%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E7%9A%84%E9%83%A8%E7%BD%B2/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+            <div class="post-description">介绍了在服务器上的Django项目，如何为其他用户提供功能服务。</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2020</span>
-    </div>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-12-24T15:21:53+08:00"
-              content="2020-12-24">
-          12-24
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/12/24/django%E9%A1%B9%E7%9B%AE%E5%9C%A8%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E7%9A%84%E9%83%A8%E7%BD%B2/" itemprop="url">
-            <span itemprop="name">django项目在服务器上的部署</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-12-21T10:59:02+08:00"
-              content="2020-12-21">
-          12-21
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/12/21/%E6%9C%AC%E7%A7%91%E6%AF%95%E8%AE%BE%E8%BF%9B%E5%B1%95%E6%83%85%E5%86%B5/" itemprop="url">
-            <span itemprop="name">本科毕设进展情况</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-12-20T16:28:10+08:00"
-              content="2020-12-20">
-          12-20
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/12/20/Designing-parking-facilities/" itemprop="url">
-            <span itemprop="name">重点论文综述：Designing parking facilities for autonomous vehicles</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-12-19T17:52:33+08:00"
-              content="2020-12-19">
-          12-19
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/12/19/%E4%BB%A3%E7%A0%81%E8%87%AA%E5%8A%A8%E6%8F%90%E4%BA%A4/" itemprop="url">
-            <span itemprop="name">VS Code 代码自动提交</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-12-19T13:53:49+08:00"
-              content="2020-12-19">
-          12-19
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/12/19/12_19-Python%20with%20Electron/" itemprop="url">
-            <span itemprop="name">使用Electron & Python构建桌面GUI</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
+        <h1 id="基本步骤"><a href="#基本步骤" class="headerlink" title="基本步骤"></a>基本步骤</h1><ul>
+<li>安装Python，Django</li>
+<li>初始化Django项目和Django APP</li>
+<li>修改setting，配置app（app名称），配置templates（templates前端文件所在地址），配置model（数据库的host，port，username，pwd等参数），配置allow host</li>
+<li>配置路由，编写views、model、templates/index.html等文件，实现功能</li>
+<li>检查服务器防火墙是否开放(http服务为80端口)</li>
+<li>runserver开放服务</li>
+</ul>
+<h1 id="注意点"><a href="#注意点" class="headerlink" title="注意点"></a>注意点</h1><ul>
+<li>服务器上的sqlite3版本是否合适，不合适的版本无法启动django<ul>
+<li>更新sqlite3，并替换掉旧的sqlite3（详情查阅其他资料）<ul>
+<li>mv 旧的</li>
+<li>ln 建立链接</li>
+</ul>
+</li>
+<li>检查python3中sqlite3.sqlite_version是否正确</li>
+</ul>
+</li>
+<li>项目的地址为BASEDIR，即创建django项目的最外面一个dir，在配置templates地址和编写后端api时，注意地址的正确</li>
+<li>注意启动是使用python还是python3，根据服务器上django项目所依赖的python版本的不同而不同。</li>
+</ul>
 
     </div>
-  </div>
-  
-  
-  
 
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%BC%80%E5%8F%91/" rel="tag"># 开发</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/12/21/%E6%9C%AC%E7%A7%91%E6%AF%95%E8%AE%BE%E8%BF%9B%E5%B1%95%E6%83%85%E5%86%B5/" rel="prev" title="本科毕设进展情况">
+      <i class="fa fa-chevron-left"></i> 本科毕设进展情况
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
   
 
 
 
           </div>
           
+    <div class="comments" id="valine-comments"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -320,6 +319,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%AD%A5%E9%AA%A4"><span class="nav-number">1.</span> <span class="nav-text">基本步骤</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%B3%A8%E6%84%8F%E7%82%B9"><span class="nav-number">2.</span> <span class="nav-text">注意点</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
